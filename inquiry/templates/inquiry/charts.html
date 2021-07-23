@@ -1,0 +1,14 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url "admin:index" %}">{% trans "Home" %}</a> &rsaquo;
+        <a href="{% url "admin:app_list" "inquiry" %}">{% trans "Inquiry" %}</a> &rsaquo;
+        {% trans "Charts" %}
+    </div>
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
